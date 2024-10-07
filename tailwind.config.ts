@@ -69,8 +69,18 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        bgMove: {
+          '40%, 60%': { backgroundPosition: 'center top' },
+          '50%': { backgroundPosition: 'center bottom' },
+        },
+      },
+      animation: {
+        bgMove: 'bgMove 100s ease-in-out infinite', // Mover lentamente em 10s
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
 };
+
 export default config;
