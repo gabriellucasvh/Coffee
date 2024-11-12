@@ -8,14 +8,14 @@ export default function Home() {
     <div className="flex flex-col min-h-screen font-sans">
       <main className="flex-1">
         <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-cover bg-no-repeat h-dvh" style={{ backgroundImage: "url('/background.jpg')" }}>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black h-full"/>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black h-full" />
           <div className="relative container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="flex flex-col items-center mt-32 md:mt-0 space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1 className="text-2xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Bem-vindo ao Coffee Shop
                 </h1>
-                <p className="mx-auto max-w-[700px] text-white md:text-xl dark:text-gray-400">
+                <p className="text-md mx-auto max-w-[700px] text-white md:text-xl dark:text-gray-400">
                   Descubra o sabor dos nossos cafés artesanais e encontre uma experiência de café única em nossa loja.
                 </p>
               </div>
@@ -33,7 +33,7 @@ export default function Home() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Nos visite</h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Venha nos visitar e experimentar o diferencial do Coffee Shop.
+                Venha nos visitar e experimentar o diferencial do Coffee Shop.
               </p>
               <div className="flex flex-col items-center justify-center w-full max-w-sm space-y-2">
                 <div className="flex items-center space-x-2 ">
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      
+
     </div>
   )
 }
